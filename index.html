@@ -10,141 +10,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="site-header">
+    <!-- HEADER + HERO -->
+    <header class="header">
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-        <a href="index.html" class="logo">Travlr</a>
+            <a href="index.html" class="logo">Travlr</a>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-        <label for="menu-toggle" class="burger">
-            ☰
-        </label>
+            <label for="menu-toggle" class="burger">
+                ☰
+            </label>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-        </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+            </div>
 
-    </nav>
-
-</header>
-
-
-<main>
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>Discover your next adventure</h1>
-
-            <p>
-                Explore amazing destinations, discover new cultures
-                and create unforgettable memories around the world.
-            </p>
-
-            <a href="destinations.html" class="button">
-                Explore
-            </a>
-
-        </div>
+        </nav>
 
 
-        <div class="hero-image">
+        <section class="hero">
 
-            <picture>
-                <source
-                    media="(max-width: 600px)"
-                    srcset="images/hero.jpg">
+            <div class="hero-text">
 
-                <img
-                    src="images/hero.jpg"
+                <h1>Discover your next adventure</h1>
+
+                <p>
+                    Explore amazing destinations, discover new cultures
+                    and create unforgettable memories around the world.
+                </p>
+
+                <a href="destinations.html" class="button">Explore</a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="hero.jpg"
                     alt="Beautiful travel destination">
-            </picture>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
+
+    </header>
 
 
-    <section class="information">
+    <!-- DESTINATION INFORMATION -->
+    <section class="destinations">
 
         <h2>Explore something new.</h2>
 
-        <div class="info-container">
+        <div class="destination-container">
 
-            <article class="info-card">
 
-                <div class="info-icon">✈</div>
+            <div class="destination-card">
 
-                <h3>Adventure</h3>
+                <div class="image-box"></div>
 
                 <p>
                     Discover exciting experiences and places
                     around the world.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="info-card">
+            <div class="destination-card">
 
-                <div class="info-icon">☀</div>
-
-                <h3>Relax</h3>
+                <div class="image-box"></div>
 
                 <p>
                     Find beautiful beaches and peaceful
                     destinations for your next vacation.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="info-card">
+            <div class="destination-card">
 
-                <div class="info-icon">⌖</div>
-
-                <h3>Explore</h3>
+                <div class="image-box"></div>
 
                 <p>
-                    Experience new cities, cultures,
-                    food and communities.
+                    Experience new cities, cultures, food
+                    and communities.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="info-card">
+            <div class="destination-card">
 
-                <div class="info-icon">♥</div>
-
-                <h3>Connect</h3>
+                <div class="image-box"></div>
 
                 <p>
                     Meet new people and create memories
                     that will last forever.
                 </p>
 
-            </article>
+            </div>
+
 
         </div>
 
     </section>
 
 
-    <section class="quote-section">
+    <!-- QUOTE -->
+    <section class="quote">
 
         <blockquote>
             “Travel is more than visiting a new place.
@@ -152,15 +138,16 @@
             different perspective.”
         </blockquote>
 
-        <p>— Travlr</p>
+        <p class="quote-author">— Travlr</p>
 
     </section>
 
 
-    <section class="cta">
+    <!-- CALL TO ACTION -->
+    <section class="call-to-action">
 
         <div>
-            <h2>Ready for your next adventure?</h2>
+            <h3>Ready for your next adventure?</h3>
 
             <p>
                 Discover destinations and start planning
@@ -168,21 +155,20 @@
             </p>
         </div>
 
-        <a href="destinations.html" class="outline-button">
+        <a href="destinations.html" class="button-outline">
             Explore
         </a>
 
     </section>
 
-</main>
 
+    <!-- FOOTER -->
+    <footer>
 
-<footer>
+        <p>Copyright © Travlr 2026</p>
 
-    <p>Copyright © Travlr 2026</p>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>
-<!-- GitHub Pages deployment -->
