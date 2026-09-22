@@ -1,0 +1,371 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #1F2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Header and navigation */
+
+.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 0 10%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #3882F6;
+}
+
+
+/* Burger menu */
+
+.menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* Hero section */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3882F6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Destination information */
+
+.destinations {
+    padding: 60px 10% 100px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.destination-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.destination-card {
+    width: 200px;
+}
+
+.image-box {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 12px;
+
+    border: 4px solid #3882F6;
+    border-radius: 12px;
+}
+
+.destination-card p {
+    color: #4B5563;
+    line-height: 1.4;
+}
+
+
+/* Quote section */
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px 20%;
+}
+
+.quote blockquote {
+    max-width: 850px;
+    margin: auto;
+
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.quote-author {
+    max-width: 850px;
+    margin: 15px auto 0;
+
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Call to action */
+
+.call-to-action {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 45px 70px;
+
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.call-to-action h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.call-to-action p {
+    color: #E5E7EB;
+}
+
+.button-outline {
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 8px 30px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+
+    text-align: center;
+    padding: 35px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0 6%;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .destination-container {
+        flex-wrap: wrap;
+    }
+
+    .destination-card {
+        width: 40%;
+    }
+
+    .quote {
+        padding: 70px 10%;
+    }
+
+    .quote blockquote {
+        font-size: 30px;
+    }
+
+    .call-to-action {
+        margin: 60px 6%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    /* Mobile navigation */
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+
+    /* Mobile hero */
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 0 70px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* Mobile destinations */
+
+    .destinations {
+        padding: 50px 5%;
+    }
+
+    .destinations h2 {
+        font-size: 30px;
+    }
+
+    .destination-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+
+    /* Mobile quote */
+
+    .quote {
+        padding: 60px 8%;
+    }
+
+    .quote blockquote {
+        font-size: 26px;
+    }
+
+
+    /* Mobile call to action */
+
+    .call-to-action {
+        margin: 50px 5%;
+        padding: 35px 25px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+}
